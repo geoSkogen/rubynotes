@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Joseph's Ruby Notes
+</title>
+
+<link rel="stylesheet" href="ruby_notes_styles.css">
+
+
+</head>
+
+<body>
+
+  <header>
+     <h3>Ruby Notes 9</h3>
+   <nav>
+     <a href="eight.html">previous page</a>&#160;&#160;&#160;
+     <a href="index.html">table of contents</a>&#160;&#160;&#160;
+     <a href="ten.html">next page</a>
+   </nav>
+  </header>
+
+ <article class="getIt">
+  <h4><span class="indexCard">Code Blocks</span></h4>
+  <p> - any code between <span class="codeLine">do</span> and
+     <span class="codeLine">end</span>, or between braces:
+     <span class="codeLine">{}</span>
+  <div class="blocked">
+    <h4><span class="indexCard">Associate a Block with a Method Call</span></h4>
+    <p>The <span class="color">yeild</span> statement produces one code block:
+    </p>
+    <section class="codeBlock">
+      <p>def callBlock</p>
+      <p>&#160;&#160;yield</p>
+      <p>end</p>
+      <br/>
+      <p>callBlock { puts "content" }</p>
+    </section>
+    <p>pass params through a block call</p>
+    <section class="codeBlock">
+      <p>def callBlock</p>
+      <p>&#160;&#160;yield</p>
+      <p>end<p>
+      <br/>
+      <p>callBlock { p1|,p2|,p3 }
+    </section>
+    <p>Yes, it's just <em>that</em> simple.</p>
+  </article>
+
+
+  <article class="getIt2">
+   <h4><span class="indexCard2">Pass a Block through a Predefined Method Call
+       </span></h4>
+   <p>Remember <span class="codeLine">a.each</span>?</p>
+   <p><span class="codeLine">a.each { |elm| puts elm }</span>
+   <p>You can substitute braces for the <span class="codeLine">do</span> and
+      <span class="codeLine">end</span> statements if you like, you javaScripter,
+      you.</p>
+ </article>
+
+
+<script>
+
+</script>
+
+</body>
+
+</html>

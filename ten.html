@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Joseph's Ruby Notes
+</title>
+
+<link rel="stylesheet" href="ruby_notes_styles.css">
+
+
+</head>
+
+<body>
+
+  <header>
+     <h3>Ruby Notes 10</h3>
+   <nav>
+     <a href="nine.html">previous page</a>&#160;&#160;&#160;
+     <a href="index.html">table of contents</a>&#160;&#160;&#160;
+     <a href="eleven.html">next page</a>&#160;&#160;&#160;&#160;
+   </nav>
+  </header>
+
+ <article class="getIt">
+  <h4><span class="indexCard">The Class Prototype Constructor</span></h4>
+  <p>To build a jukebox's data structure, start with the definition of a song:
+     </p>
+  <section class="codeBlock">
+    <p>class Song</p>
+    <p>&#160;&#160;def initialize(name, artist, duration)</p>
+    <p>&#160;&#160;&#160;&#160;@name = name</p>
+    <p>&#160;&#160;&#160;&#160;@artist = artist</p>
+    <p>&#160;&#160;&#160;&#160;@duration = duration</p>
+    <p>&#160;&#160;end</p>
+    <p>end</p>
+  </section>
+ </p>Each time you call a <span class="codeLine">Song.new</span>, Ruby creates an
+    <em>uninitialized</em> object; it then calls the object's
+    <span class="codeLine">initialize</span> method, assigning to instance
+    variables any parameters passed to the
+    <span class="codeLine">Song.new</span>.</p>
+ <section class="codeBlock">
+  <p>aSong = Song.new("Panasonic Youth","DEP","2:33")</p>
+  <p>aSong.inspect <span class="comments">&#160;&#160;&#160;#dumps object data
+  </span></p>
+ </section>
+ <div class="blocked">
+  <h4><span class="indexCard">Sub and Super Classes</span></h4>
+  <section class="codeBlock">
+    <p>class Karaoke &#60; Song</p>
+    <p>&#160;&#160;def initialize(name, artist, duration, lyrics)</p>
+    <p>&#160;&#160;&#160;&#160;super(name, artist, duration)</p>
+    <p>&#160;&#160;&#160;&#160;@lyrics = lyrics<p>
+    <p>&#160;&#160;end</p>
+    <p>end</p>
+    <br/>
+    <p>ksong = Karaoke.new(<span class="comments">#same song data, add lyrics
+      element</span>)</p>
+  </section>
+</article>
+
+<article class="getIt2">
+ <h4><span class="indexCard2">Apply a Display Method to Your Class</span></h4>
+ <p>Insert something like this along with your class definition:</p>
+ <section class="codeBlock2">
+   <p>class Song</p>
+   <p>&#160;&#160;def to_s
+   <p>&#160;&#160;&#160;&#160;"song: #{@name}, {@artist}, {@duration}"</p>
+   <p>&#160;&#160;end</p>
+   <p>end</p>
+ </section>
+ <p>What? No karaoke lyrics?</p>
+<div class="blocked">
+ <h4><span class="indexCard2">Append Class Method for Sub Class
+     </span></h4>
+ <p>Insert something like this along with your sub class definition:</p>
+ <section  class="codeBlock2">
+  <p>class Karaoke &#60; Song</p>
+  <p>&#160;&#160;def to_s</p>
+  <p>&#160;&#160;&#160;&#160;super + "#{@lyrics}"<p>
+  <p>&#160;&#160;end</p>
+  <p>end</p>
+ </section>
+  <p>This programming practice is called <em>de-coupling</em>. Ruby looks in the
+     super-class for methods if none exist in the subclass.</p>
+</div>
+
+<h4><span class="indexCard2">Attribute Reader - Accessor Method Shorthand
+    </span></h4>
+<p>Rather than writing methods which return individual instance variables, add
+ something like this to your class definition</p>
+<section class="codeBlock2">
+  <p>class Song</p>
+  <p>&#160;&#160;attr reader :name, :artist, :duration</p>
+  <p>end</p>
+</section>
+<p>Now the methods<span class="codeLine">aSong.name</span>,
+  <span class="codeLine">aSong.artist</span>, and
+  <span class="codeLine">aSong.duration</span>, will return the respective
+   values of the instance variables assigned when the object was initialized,
+   and we never have to define these individual methods.
+
+ </article>
+
+
+<script>
+
+</script>
+
+</body>
+
+</html>

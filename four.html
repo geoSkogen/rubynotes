@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Joseph's Ruby Notes
+</title>
+
+<link rel="stylesheet" href="ruby_notes_styles.css">
+
+</head>
+
+<body>
+  <header>
+     <h3>Ruby Notes 4</h3>
+   <nav>
+     <a href="three.html">previous page</a>&#160;&#160;&#160;
+     <a href="index.html">table of contents</a>&#160;&#160;&#160;
+     <a href="five.html">next page</a>
+   </nav>
+  </header>
+
+<article class="getIt">
+ <h4><span class="indexCard">Object Classes - Create a New Object</span></h4>
+ <section class="codeBlock">
+  <p>a = Array.new + ["l","m","n","o","p"]</p>
+  <p>s = String.new + "Hello Ruby!"</p>
+  <p>h = Hash.new + {firstName: "Elmo", lastName: "Oxygen"}</p>
+  <p>t = Time.new <span class="comments">&#160;&#160;#stores current date and
+      time in variable t</p>
+ </section>
+  <p>The method <span class="codeLine">.mktime</span> method is native to the
+    Time object; it creates a date-and-time-formatted string.
+  <p>Syntax: (yyyy,mm,dd,hh,mm,ss)</p>
+<h4><span class="indexCard">Extend an Existing Class</span></h4>
+ <p>This adds a method to the Integer class.</p>
+ <section class="codeBlock">
+  <p>class Integer</p>
+  <p>&#160;&#160;def do_meth</p>
+  <p>&#160;&#160;&#160;&#160;if self == 2</p>
+  <p>&#160;&#160;&#160;&#160;&#160;&#160;message = "Deuces!"</p>
+  <p>&#160;&#160;&#160;&#160;else</p>
+  <p>&#160;&#160;&#160;&#160;&#160;&#160;message = "Do I know you?"<p/>
+  <p>&#160;&#160;&#160;&#160;end&#160;&#160;<span class="comments">
+     #closes if else statements</span></p>
+  <p>&#160;&#160;&#160;&#160;message</p>
+  <p>&#160;&#160;end&#160;&#160;<span class="comments">#closes method
+     definition</span></p>
+  <p>end&#160;&#160;<span class="comments">#closes class definiton</span></p>
+</section>
+</article>
+
+<article class="getIt2">
+ <h4><span class="indexCard2">Create a New Object Class</span></h4>
+ <p>This creates a class which defines six-sided dice and a method which generates
+    a roll:</p>
+ <section class="codeBlock2">
+  <p>class Die</p>
+  <p>&#160;&#160;def roll</p>
+  <p>&#160;&#160;&#160;&#160;1 + rand(6)</p>
+  <p>&#160;&#160;end</p>
+  <p>end</p>
+ </section>
+ <p>This populates a new array with new objects of sixed-sided dice:</p>
+ <section class ="codeBlock2">
+  <p>dice = [Die.new, Die.new, Die.new]</p>
+ </section>
+ <p>This iterates through the array, calling the Die class's roll method:</p>
+ <section class="codeBlock2">
+  <p>dice.each do |die|</p>
+  <p>&#160;&#160;puts die.roll<p/>
+  <p>end<p/>
+ </section>
+ <p>Note how the method call here is to the array iterator, hence the lower-case
+  <span class="color">die</span>.
+</article>
+
+
+
+<script>
+
+</script>
+
+</body>
+
+</html>

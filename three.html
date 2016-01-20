@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Joseph's Ruby Notes
+</title>
+
+<link rel="stylesheet" href="ruby_notes_styles.css">
+
+</head>
+
+<body>
+  <header>
+     <h3>Ruby Notes 3</h3>
+   <nav>
+     <a href="two.html">previous page</a>&#160;&#160;&#160;
+     <a href="index.html">table of contents</a>&#160;&#160;&#160;
+     <a href="four.html">next page</a>
+   </nav>
+  </header>
+
+ <article class="getIt">
+   <h4><span class="indexCard">A Simple Logic Gate</span></h4>
+   <section class="codeBlock">
+    <p>binary = false</p>
+
+    <p>while (not binary)</p>
+    <p>&#160;&#160;puts "Enter either Yin or Yang:"</p>
+    <p>&#160;&#160;goodInput = gets.chomp.downcase</p>
+    <br/>
+    <p>&#160;&#160;if (goodInput == "Yin" or goodInput == "Yang")</p>
+    <p>&#160;&#160;&#160;&#160;binary = true</p>
+    <p>&#160;&#160;else</p>
+    <p>&#160;&#160;&#160;&#160;puts = "Enter Yin or Yang only."</p>
+    <p>&#160;&#160;end &#160;&#160; <span class="comments">
+      #closes if else statements</span>
+    <p>end&#160;&#160;<span class="comments">#closes while loop</span>
+   </section>
+ <p>Create a condition, then invoke a loop with a pertaining conditional
+   statement. Note that there is no keyword for defining variables or for
+   assignment.
+ </article>
+
+ <article class="getIt2">
+  <h4><span class="indexCard2">How to Write a Simple Global Method</span></h4>
+
+  <section class="codeBlock2">
+    <p>def sayHand<p>
+    <p>&#160;&#160;puts "Hand"
+    <p>end</p>
+  </section>
+  <br/>
+  <h4><span class="indexCard2">Add Paramaters to Your Method</span></h4>
+  <section class="codeBlock2">
+    <p>def sayHand doHand<p>
+    <p>&#160;&#160;puts "Hand" * doHand
+    <p>end</p>
+  </section>
+  <p>Now your method takes a numeric parameter.  By typing <span class="color">
+    sayHand 3</span>, for example the method will take the 3 in place of doHand.
+  </p>
+  <h4><span class="indexCard2">Methods May Contain Local Variables</span></h4>
+  <section class="codeBlock2">
+    <p>def squareIt val<p>
+    <p>&#160;&#160;valSquared = val * val
+    <p>&#160;&#160;puts val.to_s + " squared is " + valSquared.to_s</p>
+    <p>end</p>
+  </section>
+ </article>
+
+<script>
+
+</script>
+
+</body>
+
+</html>
