@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Joseph's Ruby Notes
+</title>
+
+<link rel="stylesheet" href="ruby_notes_styles.css">
+
+</head>
+
+<body>
+
+  <header>
+   <h3>Ruby Notes 8</h3>
+   <nav>
+     <a href="seven.html">previous page</a>&#160;&#160;&#160;
+     <a href="index.html">table of contents</a>&#160;&#160;&#160;
+     <a href="nine.html">next page</a>
+   </nav>
+  </header>
+
+ <article class="getIt">
+  <h4><span class="indexCard">Regular Expressions</span></h4>
+  <p><span class="codeLine">/this is a pattern/</span>&#160;&#160;&#160;
+     <span class="codeLine">/eitherthis | orthis /</span></p>
+  <div class="blocked">
+   <h4><span class="indexCard">Some Typography</span></h4>
+   <p>
+    <span class="codeLine">\s</span>&#160;&#160;space&#160;&#160;&#160;
+    <span class="codeLine">\t</span>&#160;&#160;tab&#160;&#160;&#160;
+    <span class="codeLine">\n</span>&#160;&#160;newline&#160;&#160;&#160;
+   </p>
+   <h4><span class="indexCard">A Few Character Classes</span></h4>
+   <p>
+    <span class="codeLine">\d</span>&#160;&#160;any digit&#160;&#160;&#160;
+    <span class="codeLine">\w</span>&#160;&#160;any letter&#160;&#160;&#160;
+    <span class="codeLine">\.</span>&#160;&#160;any character&#160;&#160;&#160;
+   </p>
+   <h4><span class="indexCard">Operators</span></h4>
+   <p>
+    <span class="codeLine">=~</span>&#160;&#160;match operator - returns start
+     index or nil
+    </p>
+    <p><span class="codeLine">+</span>&#160;&#160;
+     one or more of the preceding
+    </p>
+    <p><span class="codeLine">*</span>&#160;&#160;
+     zero or more of the preceding
+    </p>
+ </div>
+</article>
+
+<article class="getIt2">
+  <h4><span class="indexCard2">Regular Expression Examples</span></h4>
+   <p>This pattern would match a time string expressed in hours, minutes,
+   and seconds:<p/>
+  <section class="codeBlock2">
+    <p>/\d\d:\d\d:\d\d/</p>
+  </section>
+  <p>Reg exps can be combined with conditionals:</p>
+  <section class="codeBlock2">
+    <p>if line =~ /P(erl|ython)/</p>
+    <p>&#160;&#160;puts "language: #{line}"</p>
+    <p>end</p>
+  </section>
+ <p>Find-and-replace methods:</p>
+ <p><span class="codeLine">line.sub(Perl/"Ruby")</span>&#160;&#160;
+     replaces <em>the first</em> instance of <span class="color">Perl</span> with
+     <span class="color">Ruby</span>.</p>
+ <p><span class="codeLine">line.gsub(Python/"Ruby")</span>&#160;&#160;
+     replaces <em>every</em> instance of <span class="color">Python</span> with
+     <span class="color">Ruby</span>.</p>
+</article>
+
+
+<script>
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Joseph's Ruby Notes
+</title>
+
+<link rel="stylesheet" href="ruby_notes_styles.css">
+
+</head>
+
+
+<body>
+
+  <header>
+   <h3>Ruby Notes 7</h3>
+   <nav>
+     <a href="six.html">previous page</a>&#160;&#160;&#160;
+     <a href="index.html">table of contents</a>&#160;&#160;&#160;
+     <a href="eight.html">next page</a>
+   </nav>
+  </header>
+
+<article class="getIt">
+ <h4><span class="indexCard">String Literals - Single vs. Double Quotes
+ </span></h4>
+ <p>Ruby does very little to process strings between single quotes.
+    Strings between double quotes have two useful features, however.</p>
+ <dl class="dataList">
+   <dt><span class="indexCard">substitution sensitivity:</span></dt>
+   <dd>Ruby will parse typographical characters like <span class="codeLine">\n</span>
+      (new line) within double-quoted strings.</dd>
+  <dt><span class="indexCard">expression interpolation:</span></dt>
+  <dd>Ruby reads variables and expressions within strings, without breaking
+      the quotes:</dd>
+  <dd><span class="codeLine">puts "sometext #{var1Name}
+      sometext."</span></dd>
+  </dl>
+  <p>The <span class="codeLine">#{}</span> configuration accepts arbitrarily
+     complex expressions. When simply interpolating global vars or class vars,
+     no brackets are required.
+  <h4><span class="indexCard">Variable Naming Rules - First Character
+  </span></h4>
+
+  <dl class="dataList">
+    <dt>local variables, methods - <em>and</em> their parameters:</dt>
+      <dd><span class="codeLine">_mylocal</span>&#160;
+          <span class="codeLine">do_meth</span>&#160;
+          <span class="codeLine">param1</span>&#160;
+           - lowercase or underscore</dd>
+
+    <dt>classes, modules, and constants:</dt>
+      <dd><span class="codeLine">MyObject</span>&#160;&#160; - uppercase letter only!</dd>
+    <dt>globals:</dt>
+     <dd><span class="codeLine">$myGlobal</span></dd>
+    <dt>instance variables:</dt>
+     <dd><span class="codeLine">@thisInstance</span></dd>
+    <dt>class variables:</dt>
+      <dd><span class="codeLine">@@classVar</span></dd>
+
+</article>
+
+<article class="getIt2">
+  <h4><span class="indexCard2">Shorthand!
+  </span></h4>
+  <p>Just in case you didn't want to <span class="color">ass</span>ume:</p>
+  <p><span class="codeLine">a1 = []</span> is the same as
+     <span class="codeLine">a2 = Array.new</span><br/>
+      - and the same goes for hashes.</p>
+
+   <h4><span class="indexCard2">Populate an Array with Strings Shorthand!
+   </span></h4>
+   <p><span class="codeLine">a = %w { str1 str2 str3 }</span> is the same as
+     <br/><br/>
+   <span class="codeLine">a = {"str1","str2","str3"}</span>.</p>
+   <h4><span class="indexCard2">Conditionality Shorthand!
+   </span></h4>
+   <p><span class="codeLine">puts "Danger" if x > 3000</span> is equal to</p>
+   <section class="codeBlock2">
+    <p>if x > 3000</p>
+    <p>&#160;&#160;puts "Danger"</p>
+    <p>end</p>
+   </section>
+
+
+
+</article>
+
+
+
+
+<script>
+
+</script>
+
+</body>
+
+</html>

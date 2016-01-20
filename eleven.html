@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Joseph's Ruby Notes
+</title>
+
+<link rel="stylesheet" href="ruby_notes_styles.css">
+
+
+</head>
+
+<body>
+
+  <header>
+     <h3>Ruby Notes 11</h3>
+   <nav>
+     <a href="ten.html">previous page</a>&#160;&#160;&#160;
+     <a href="index.html">table of contents</a>&#160;&#160;&#160;
+     <a href="twelve.html">next page</a>
+   </nav>
+  </header>
+
+ <article class="getIt">
+  <h4><span class="indexCard">Class Variables</span></h4>
+  <p>If we want to track which songs get played the most, we use an
+     <em>instance</em> variable; each song records its number of plays -
+     each object has a number of plays variable. But if we want the jukebox to
+     count the total number of songs it's played, we need a <em>class</em>
+     variable</p>
+  <p>Declare the class variables proir to the initialize method, declare the
+    instance variables with the initialize method.</p>
+  <section class="codeBlock">
+    <p>class Song</p>
+    <p>@@plays = 0</p>
+    <p>&#160;&#160;def initialize(name, artist, duration, plays)
+    <p>&#160;&#160;&#160;&#160;@name = name</p>
+    <p>&#160;&#160;&#160;&#160;@artist = artist</p>
+    <p>&#160;&#160;&#160;&#160;@duration = druation<p>
+    <p>&#160;&#160;&#160;&#160;@plays = 0</p>
+    <p>&#160;&#160;</p>
+    <p>&#160;&#160;def play</p>
+    <p>&#160;&#160;&#160;&#160;@plays +=1</p>
+    <p>&#160;&#160;&#160;&#160;@@plays +=1</p>
+    <p>&#160;&#160;&#160;&#160;"song: #{@plays} total,
+                                jukebox: #{@@plays} total"</p>
+    <p>&#160;&#160;end</p>
+    <p>end</p>
+  </section>
+ </article>
+
+ <article class="getIt2">
+  <br/>
+  <p>Now, create a couple different Song objects:</p>
+  <section class="codeBlock2">
+    <p>s1 = Song.new("Panasonic Youth","DEP","2:33")</p>
+    <p>s2 = Song.new("Phthisis","SGM","3:46")</p>
+  </section>
+  <p>If our first "play is <span class="codeLine">s1.play</span>, the program
+     will return <span class="color">song: 1 total, jukebox: 1 total</span>.
+     Following with <span class="codeLine">s2.play</span>, the program
+     returns <span class="color">song: 1 total, jukebox: 2 total</span>, etc.
+  </p>
+ <h4><span class="indexCard">Accessor Methods</span></h4>   
+</article>
+
+
+<script>
+
+</script>
+
+</body>
+
+</html>

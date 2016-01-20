@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Joseph's Ruby Notes
+</title>
+
+<link rel="stylesheet" href="ruby_notes_styles.css">
+
+
+</head>
+
+<body>
+
+  <header>
+     <h3>Ruby Notes 1</h3>
+   <nav>
+
+     <a href="index.html">table of contents</a>&#160;&#160;&#160;
+     <a href="two.html">next page</a>
+   </nav>
+  </header>
+
+ <article class="getIt">
+  <h4><span class="indexCard">Getting Strung</span></h4>
+  <p><span class="codeLine">puts</span> means<span class="color">
+    put s</span>tring.</p>
+  <p>Follow with string in single or double quotes.</p>
+  <p><span class="codeLine">gets</span> means<span class="color"> get s</span>
+      tring - from user keyboard input.</p>
+  <p>Use the method <span class="codeLine">gets.chomp</span> to remove the
+    whitespace and </p>
+  <p>other user keystrokes around the string.</p>
+
+  <div class="blocked">
+   <h4><span class="indexCard">A Few Common String Methods</span></h4>
+   <span class="codeLine">str.upcase</span>&#160;&#160;&#160;
+   <span class="codeLine">str.downcase</span>&#160;&#160;&#160;
+   <span class="codeLine">str.swapcase</span>&#160;&#160;&#160;<br/><br/>
+   <span class="codeLine">str.capitalize</span>&#160;&#160;&#160;
+   <span class="codeLine">str.reverse</span>&#160;&#160;&#160;
+   <p><span class="codeLine">str.center( )</span>&#160;&#160;&#160;
+     takes line width in chars</p>
+   <span class="codeLine">str.ljust</span>&#160;&#160;&#160;
+   <span class="codeLine">str.rjust</span>&#160;&#160;&#160;<br/><br/>
+
+   <h4><span class="indexCard">Variable Conversion</span></h4>
+   <p><span class="codeLine">varname.to_s</span>&#160;&#160;&#160;
+     converts to string</p>
+   <p><span class="codeLine">varname.to_i</span>&#160;&#160;&#160;
+      converts to integer</p>
+   <p><span class="codeLine">varname.to_f</span>&#160;&#160;&#160;
+      converts to floating-point decimal</p>
+  </div>
+
+ </article>
+
+ <article class="getIt2">
+  <h4><span class="indexCard2">Mathly</span></h4>
+  <p>I'm used to JavaScript, where you feed numbers to a math object.&#160;&#160;
+    In Ruby, math methods are native to numbers. </p>
+  <span class="codeLine">x = -4</span><br/>
+  <p><span class="codeLine">x.abs</span>&#160;&#160;returns the absolute
+    value of x.</p>
+
+  <p><span class="codeLine">rand</span>&#160;&#160;returns a random number
+    less than one, and greater than or equal to zero.</p>
+  <p><span class="codeLine">rand(i)</span>&#160;&#160;returns a random
+    number less than <em>i</em>, and greater than or equal to zero.</p>
+  <p><span class="codeLine">rand</span>&#160;&#160;can also be <em>seeded</em>.
+    <span class="codeLine">srand(i)</span>&#160;&#160;returns a predictable
+    series of random numbers based on the value of <em>i</em>.</p>
+  <div class="blocked">
+    <h4><span class="indexCard2">A Few Operators</span></h4>
+    <p>It's the ususal stuff</p>
+    <span class="codeLine">+</span>&#160;&#160;&#160;
+    <span class="codeLine">-</span>&#160;&#160;&#160;
+    <span class="codeLine">*</span>&#160;&#160;&#160;
+    <span class="codeLine">/</span>&#160;&#160;&#160;<br/>
+    <p><span class="codeLine">%</span>&#160;&#160;&#160;use in place of / to
+      return remainder of a / b</p>
+    <p><span class="codeLine">**</span>&#160;&#160;&#160;exponentiation;
+      <span class="codeLine">a ** b</span> equals a to the b</p>
+  </div>
+ </article>
+
+
+<script>
+
+</script>
+
+</body>
+
+</html>
