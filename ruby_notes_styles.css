@@ -92,7 +92,7 @@ article.getIt {
   max-width: 475px;
   border: 2px solid #132639;
   border-radius: 14px 2px 2px 2px;
-  padding: 0 14px 20px 36px;
+  padding: 0 20px 20px 20px;
   margin: 15px;
   float:left;
   opacity: 0.8;
@@ -107,7 +107,7 @@ article.getIt2 {
   max-width: 475px;
   border: 2px solid #132639;
   border-radius: 2px 14px 2px 2px;
-  padding: 0 20px 20px 14px;
+  padding: 0 20px 20px 20px;
   margin: 15px;
   float:left;
   opacity: 0.8;
@@ -123,7 +123,7 @@ article.widerGetIt {
   width: 475px;
   border: 2px solid #132639;
   border-radius: 14px 2px 2px 2px;
-  padding: 0 14px 20px 36px;
+  padding: 0 20px 20px 20px;
   margin: 15px;
   float:left;
   opacity: 0.8;
@@ -137,7 +137,7 @@ article.widerGetIt2 {
   width: 475px;
   border: 2px solid #132639;
   border-radius: 2px 14px 2px 2px;
-  padding: 0 20px 20px 14px;
+  padding: 0 20px 20px 20px;
   margin: 15px;
   float:left;
   opacity: 0.8;
