@@ -15,80 +15,94 @@
 </head>
 
 <body>
-
-  <header>
-     <h3>Ruby Notes 2</h3>
-   <nav>
-     <a href="one.html">previous page</a>&#160;&#160;&#160;
-     <a href="index.html">table of contents</a>&#160;&#160;&#160;
-     <a href="three.html">next page</a>
-   </nav>
-  </header>
-
- <article class="getIt">
-   <h4><span class="indexCard">Branching - Conditional Statements</span></h4>
-   <p>Code blocks for conditions aren't enclosed in brackets, or anything.
-     Just keep the conditionals on their own separate lines and close the whole
-     thing with an <span class="codeLine">end</span>.</p>
-  <div class="bordered">
-    <span class="codeLine">if</span>&#160;&#160;&#160;<br/>
-    <p>&#160;&#160;#code block</p>
-    <span class="codeLine">else</span>&#160;&#160;&#160;<br/>
-    <p>&#160;&#160;#code block</p>
-    <span class="codeLine">end</span>
+  <div class="flexOuterSpace">
+    <header>
+      <nav>
+        <div class="table">
+          <a href="one.html">prev</a>
+        </div>
+        <div class="table">
+          <a href="index.html">index</a>&#160;&#160;&#160;
+        </div>
+        <div class="table">
+          <a href="three.html">next</a>
+        </div>
+      </nav>
+    </header>
   </div>
+  <div class="flexOuterCenter">
+    <h3>Ruby Notes 2</h3>
+  </div>
+  <div class="flexOuterCenter">
+  <article class="getIt">
+    <div class="indexCardBig">Branching - Conditional Statements</div>
+    <p>Code blocks for conditions aren't enclosed in brackets, or anything.
+       Just keep the conditionals on their own separate lines and close the whole
+       thing with an <span class="codeLine">end</span>.</p>
+    <div class="bordered">
+      <span class="codeLine">if</span>&#160;&#160;&#160;<br/>
+      <p>&#160;&#160;#code block</p>
+      <span class="codeLine">else</span>&#160;&#160;&#160;<br/>
+      <p>&#160;&#160;#code block</p>
+      <span class="codeLine">end</span>
+    </div>
     <br/>
-  <div class="bordered">
-    <span class="codeLine">while</span>&#160;&#160;&#160;<br/>
-    <p>&#160;&#160;#code block</p>
-    <span class="codeLine">end</span>&#160;&#160;&#160;<br/>
-  </div>
-
-  <p>True, false, and, or, and not are just that:
-    <span class="codeLine">true</span>&#160;&#160;&#160;
-    <span class="codeLine">false</span>&#160;&#160;&#160;
-    <span class="codeLine">and</span>&#160;&#160;&#160;
-    <span class="codeLine">or</span>&#160;&#160;&#160;
-    <span class="codeLine">not</span>&#160;&#160;&#160;
- </article>
-
-
-
-
- <article class="getIt2">
-   <h4><span class="indexCard2">Hurray! Array Methods</span></h4>
-   <p>The <span class="codeLine">.each</span> iterator:</p>
-   <div class="bordered">
-    <span class="codeLine">a.each do |a<sub>m</sub>|</span><br/>
-    <p>#code block using a<sub>m</sub></p>
-    <span class="codeLine">end</span>
-   </div>
-   <p>For each array member, Ruby executes any lines of code which follow,
-     wherein a<sub>m</sub> represents the current array member. Identify
-     iterative parameter between pipes and use it in the code block that
-     follows. As always, close with end statement.</p>
-   <div class="blocked">
-    <h4><span class="indexCard2">A Few More Common Methods</span><h4>
-    <p><span class="codeLine">puts a.to_s</span>&#160;&#160;displays ["m<sub>1</sub>",
-      "m<sub>2</sub>","m<sub>3</sub>"]</p>
-    <p><span class="codeLine">puts a.join(",")</span>&#160;&#160;displays m<sub>1</sub>,
+    <div class="bordered">
+      <span class="codeLine">while</span>&#160;&#160;&#160;<br/>
+      <p>&#160;&#160;#code block</p>
+      <span class="codeLine">end</span>&#160;&#160;&#160;<br/>
+    </div>
+    <p>True, false, and, or, and not are just that:
+      <span class="codeLine">true</span>&#160;&#160;&#160;
+      <span class="codeLine">false</span>&#160;&#160;&#160;
+      <span class="codeLine">and</span>&#160;&#160;&#160;
+      <span class="codeLine">or</span>&#160;&#160;&#160;
+      <span class="codeLine">not</span>&#160;&#160;&#160;
+  </article>
+  <article class="getIt2">
+    <h4><span class="indexCard2">Hurray! Array Methods</span></h4>
+    <p>The <span class="codeLine">.each</span> iterator:</p>
+    <div class="bordered">
+      <span class="codeLine">a.each do |a<sub>m</sub>|</span><br/>
+      <p>#code block using a<sub>m</sub></p>
+      <span class="codeLine">end</span>
+    </div>
+    <p>For each array member, Ruby executes any lines of code which follow,
+       wherein a<sub>m</sub> represents the current array member. Identify
+       iterative parameter between pipes and use it in the code block that
+       follows. As always, close with end statement.</p>
+    <div class="indexCardBig2">A Few More Common Methods</div>
+      <p><span class="codeLine">puts a.to_s</span>&#160;&#160;
+        displays ["m<sub>1</sub>",
+        "m<sub>2</sub>","m<sub>3</sub>"]</p>
+      <p><span class="codeLine">puts a.join(",")</span>&#160;&#160;
+        displays m<sub>1</sub>,
         m<sub>2</sub>,m<sub>3</sub></p>
-    <p><span class="codeLine">a.push "newElement"</span>&#160;&#160;
-      add new element in last position</p>
-    <p><span class="codeLine">a.pop</span>&#160;&#160;
-      removes last element and displays it</p>
-    <p><span class="codeLine">a.last</span>&#160;&#160;
-      displays last element only</p>
-    <p><span class="codeLine">a.sort</span>&#160;&#160;
-      alphabetically re-orders array</p>
+      <p><span class="codeLine">a.push "newElement"</span>&#160;&#160;
+        add new element in last position</p>
+      <p><span class="codeLine">a.pop</span>&#160;&#160;
+        removes last element and displays it</p>
+      <p><span class="codeLine">a.last</span>&#160;&#160;
+        displays last element only</p>
+      <p><span class="codeLine">a.sort</span>&#160;&#160;
+        alphabetically re-orders array</p>
     </article>
-
-
-
-<script>
-
-</script>
-
+  </div>
+  <div class="flexOuterSpace">
+    <footer>
+      <nav>
+        <div class="table">
+          <a href="one.html">prev</a>
+        </div>
+        <div class="table">
+          <a href="index.html">index</a>&#160;&#160;&#160;
+        </div>
+        <div class="table">
+          <a href="three.html">next</a>
+        </div>
+      </nav>
+    </footer>
+  </div>
 </body>
 
 </html>

@@ -15,81 +15,99 @@
 </head>
 
 <body>
-
-  <header>
-   <h3>Ruby Notes 6</h3>
-   <nav>
-     <a href="five.html">previous page</a>&#160;&#160;&#160;
-     <a href="index.html">table of contents</a>&#160;&#160;&#160;
-     <a href="seven.html">next page</a>
-   </nav>
-  </header>
-
-
-
-<article class="getIt">
- <h4><span class="indexCard">Procs - Obeject-Method Interplay
- </span></h4>
- <p>Like array iterators, procs make use of the <span class="color">do</span>
-    statement, and like methods, procs can be <span class="color">call</span>ed.
- <section class="codeBlock">
-  <p>namer = Proc.new do |name|</p>
-  <p>&#160;&#160;puts "Because his hame is " + name + "."</p>
-  <p>end</p><br/>
-  <p>namer.call "Bomasha"
- </section>
- <p>Note how we pass a value with the proc call, much like with a method call,
-    the difference is <em>procs can be passed to methods as parameters</em>, which
-    makes them at once methods and objects:</p>
- <section class="codeBlock">
-  <p>def interrupt myProc</p>
-  <p>&#160;&#160;puts "Interrupting proc call says:"</p>
-  <p>&#160;&#160;myProc.call</p>
-  <p>&#160;&#160;puts "Please continue."</p>
-  <p>end</p>
-  <br/>
-  <p>var1name = Proc.new do</p>
-  <p>&#160;&#160;puts "blahblahblah"</p>
-  <p>end</p>
-  <p>var2name = Proc.new do</p>
-  <p>&#160;&#160;puts "nyahnyahnyah"</p>
-  <p>end</p>
-  <br/>
-  <p>interrupt var1name</p>
-  <p>interrupt var2name</p>
- </section>
-</article>
-
-<article class="getIt2">
- <h4><span class="indexCard2">Pass Procs to a Method which Retrns a Proc</span></h4>
- <p>On the origin of <em>lazy analysis</em>:</p>
- <section class="codeBlock2">
-   <p>def compose proc1, proc2</p>
-   <p>&#160;&#160;Proc.new |x|</p>
-   <p>&#160;&#160;&#160;&#160;proc2.call(proc1.call(x))</p>
-   <p>&#160;&#160;end</p>
-   <p>end</p>
-   <br/>
-   <p>squareIt = Proc.new do |x|</p>
-   <p>&#160;&#160;x * x</p>
-   <p>end</p>
-   <br/>
-   <p>doubleIt = Proc.new do |x|</p>
-   <p>&#160;&#160;x + x</p>
-   <p>end</p>
-   <br/>
-   <p>doubleThenSquare = compose doubleIt, squareIt</p>
-   <p>squareThenDouble = compose squareIt, doubleIt</p>
-
- </section>
-</article>
-
-
-
-<script>
-
-</script>
-
+  <div class="flexOuterCenter">
+    <header>
+      <nav>
+        <div class="table">
+          <a href="five.html">prev</a>
+        </div>
+        <div class="table">
+          <a href="index.html">index</a>&#160;&#160;&#160;
+        </div>
+        <div class="table">
+          <a href="seven.html">next</a>
+        </div>
+      </nav>
+    </header>
+  </div>
+  <div class="flexOuterCenter">
+    <h3>Ruby Notes 6</h3>
+  </div>
+  <div class="flexOuterCenter">
+    <article class="getIt">
+      <div class="indexCardBig">Procs - Obeject-Method Interplay</div>
+      <p>Like array iterators, procs make use of the
+        <span class="color">do</span>
+         statement, and like methods, procs can be
+        <span class="color">call</span>ed.
+      </p>
+      <section class="codeBlock">
+        <p>namer = Proc.new do |name|</p>
+        <p>&#160;&#160;puts "Because his hame is " + name + "."</p>
+        <p>end</p><br/>
+        <p>namer.call "Bomasha"
+      </section>
+      <p>Note how we pass a value with the proc call, much like with a method
+         call, the difference is <em>procs can be passed to methods as
+         parameters</em>, which makes them at once methods and objects:
+      </p>
+      <section class="codeBlock">
+        <p>def interrupt myProc</p>
+        <p>&#160;&#160;puts "Interrupting proc call says:"</p>
+        <p>&#160;&#160;myProc.call</p>
+        <p>&#160;&#160;puts "Please continue."</p>
+        <p>end</p>
+        <br/>
+        <p>var1name = Proc.new do</p>
+        <p>&#160;&#160;puts "blahblahblah"</p>
+        <p>end</p>
+        <p>var2name = Proc.new do</p>
+        <p>&#160;&#160;puts "nyahnyahnyah"</p>
+        <p>end</p>
+        <br/>
+        <p>interrupt var1name</p>
+        <p>interrupt var2name</p>
+      </section>
+    </article>
+    <article class="getIt2">
+      <div class="indexCardBig2">Pass Procs to a Method which Returns a Proc
+      </div>
+      <p>On the origin of <em>lazy analysis</em>:</p>
+      <section class="codeBlock2">
+        <p>def compose proc1, proc2</p>
+        <p>&#160;&#160;Proc.new |x|</p>
+        <p>&#160;&#160;&#160;&#160;proc2.call(proc1.call(x))</p>
+        <p>&#160;&#160;end</p>
+        <p>end</p>
+        <br/>
+        <p>squareIt = Proc.new do |x|</p>
+        <p>&#160;&#160;x * x</p>
+        <p>end</p>
+        <br/>
+        <p>doubleIt = Proc.new do |x|</p>
+        <p>&#160;&#160;x + x</p>
+        <p>end</p>
+        <br/>
+        <p>doubleThenSquare = compose doubleIt, squareIt</p>
+        <p>squareThenDouble = compose squareIt, doubleIt</p>
+      </section>
+    </article>
+  </div>
+  <div class="flexOuterCenter">
+    <footer>
+      <nav>
+        <div class="table">
+          <a href="five.html">prev</a>
+        </div>
+        <div class="table">
+          <a href="index.html">index</a>&#160;&#160;&#160;
+        </div>
+        <div class="table">
+          <a href="seven.html">next</a>
+        </div>
+      </nav>
+    </footer>
+  </div>
 </body>
 
 </html>
