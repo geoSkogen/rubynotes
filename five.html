@@ -15,67 +15,86 @@
 </head>
 
 <body>
-  <header>
-     <h3>Ruby Notes 5</h3>
-   <nav>
-     <a href="four.html">previous page</a>&#160;&#160;&#160;
-     <a href="index.html">table of contents</a>&#160;&#160;&#160;
-     <a href="six.html">next page</a>
-   </nav>
-  </header>
-
-<article class="getIt">
- <h4><span class="indexCard">Create an Instance Variable - Object Element
- </span></h4>
- <p>Where method variables last only through the method call, an object's
-    instance variables last as long as the object. </p>
-   <section class="codeBlock">
-    <p>class Die</p>
-    <p>&#160;&#160;def roll</p>
-    <p>&#160;&#160;&#160;&#160;@faceNumber = 1 + rand(6)</p>
-    <p>&#160;&#160;end</p>
-    <p>&#160;&#160;def face</p>
-    <p>&#160;&#160;&#160;&#160;@faceNumber</p>
-    <p>&#160;&#160;end</p>
-    <p>end</p>
-    <br/>
-    <p>die = Die.new&#160;&#160;<span class="comments">#assigns new object to
-      reference variable</span></p>
-    <p>die.roll</p>
-    <p>puts die.face</p>
-   </section>
-   <p>The use of the instance variable allows us to store the results of the
-      roll and inspect it without rolling the die. However, if we attempt to
-      inspect the roll value before the die has been rolled, Ruby returns a nil.
-   </p>
-</article>
-
-<article class="getIt2">
- <h4><span class="indexCard2">The Initialize Method</span></h4>
- <p>Initialize is always called when a new class object is created. Insert
-    the this method after the class declaration:<p/>
-<section class="codeBlock2">
- <p>class Die</p>
- <p>&#160;&#160;def initialize</p>
- <p>&#160;&#160;&#160;&#160;roll</p>
- <p>&#160;&#160;end</p>
- <p>&#160;&#160;def roll</p>
- <p>&#160;&#160;&#160;&#160;@faceNumber = 1 + rand(6)</p>
- <p>&#160;&#160;end</p>
- <p>&#160;&#160;def face</p>
- <p>&#160;&#160;&#160;&#160;@faceNumber</p>
- <p>&#160;&#160;end</p>
- <p>end</p>
- </section>
-<p>Now any die object created with the Die class will have a face value, even
-   before we roll it - just like an actual die.</p>
-</article>
-
-
-<script>
-
-</script>
-
+  <div class="flexOuterCenter">
+    <header>
+      <nav>
+        <div class="table">
+          <a href="four.html">prev</a>
+        </div>
+        <div class="table">
+          <a href="index.html">index</a>&#160;&#160;&#160;
+        </div>
+        <div class="table">
+          <a href="six.html">next</a>
+        </div>
+      </nav>
+    </header>
+  </div>
+  <div class="flexOuterCenter">
+    <h3>Ruby Notes 5</h3>
+  </div>
+  <div class="flexOuterCenter">
+    <article class="getIt">
+      <div class="indexCardBig">Create an Instance Variable - Object Element
+      </div>
+      <p>Where method variables last only through the method call, an object's
+         instance variables last as long as the object. </p>
+      <section class="codeBlock">
+        <p>class Die</p>
+        <p>&#160;&#160;def roll</p>
+        <p>&#160;&#160;&#160;&#160;@faceNumber = 1 + rand(6)</p>
+        <p>&#160;&#160;end</p>
+        <p>&#160;&#160;def face</p>
+        <p>&#160;&#160;&#160;&#160;@faceNumber</p>
+        <p>&#160;&#160;end</p>
+        <p>end</p>
+        <br/>
+        <p>die = Die.new&#160;&#160;<span class="comments">#assigns new object to
+           reference variable</span></p>
+        <p>die.roll</p>
+        <p>puts die.face</p>
+      </section>
+        <p>The use of the instance variable allows us to store the results of the
+           roll and inspect it without rolling the die. However, if we attempt to
+           inspect the roll value before the die has been rolled, Ruby returns a nil.
+        </p>
+    </article>
+    <article class="getIt2">
+      <h4><span class="indexCard2">The Initialize Method</span></h4>
+      <p>Initialize is always called when a new class object is created. Insert
+         the this method after the class declaration:<p/>
+        <section class="codeBlock2">
+          <p>class Die</p>
+          <p>&#160;&#160;def initialize</p>
+          <p>&#160;&#160;&#160;&#160;roll</p>
+          <p>&#160;&#160;end</p>
+          <p>&#160;&#160;def roll</p>
+          <p>&#160;&#160;&#160;&#160;@faceNumber = 1 + rand(6)</p>
+          <p>&#160;&#160;end</p>
+          <p>&#160;&#160;def face</p>
+          <p>&#160;&#160;&#160;&#160;@faceNumber</p>
+          <p>&#160;&#160;end</p>
+          <p>end</p>
+        </section>
+        <p>Now any die object created with the Die class will have a face value, even
+           before we roll it - just like an actual die.</p>
+    </article>
+  </div>
+  <div class="flexOuterCenter">
+    <footer>
+      <nav>
+        <div class="table">
+          <a href="four.html">prev</a>
+        </div>
+        <div class="table">
+          <a href="index.html">index</a>&#160;&#160;&#160;
+        </div>
+        <div class="table">
+          <a href="six.html">next</a>
+        </div>
+      </nav>
+    </footer>
+  </div>
 </body>
 
 </html>
