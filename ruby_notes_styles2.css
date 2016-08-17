@@ -41,6 +41,7 @@ div.table {
   padding: 0.5em;
   margin: 0.5em;
   flex: 1 1 15%;
+  cursor: pointer;
 }
 
 div.table:hover {

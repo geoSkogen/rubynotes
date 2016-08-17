@@ -45,6 +45,7 @@ div.table {
   margin: 0.5em;
   flex: 1 1 15%;
   max-height: 1em;
+  cursor: pointer;
 }
 
 div.table:hover {
@@ -168,7 +169,7 @@ section.codeBlock {
   font-size: 14px;
   font-weight: 900;
   line-height: 70%;
-  padding: 4px;
+  padding: 0.25em 1em 0 1em;
   border-radius: 8px 2px 2px 2px;
 }
 
@@ -180,7 +181,7 @@ section.codeBlock2 {
     font-size: 14px;
     font-weight: 900;
     line-height: 70%;
-    padding: 4px;
+    padding: 0.5em 1em;
     border-radius: 2px 8px 2px 2px;
 }
 
