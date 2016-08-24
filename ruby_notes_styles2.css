@@ -47,8 +47,8 @@ div.table {
 div.table:hover {
   background-color: #3973AC;
   color:  #132639;
-  border-radius: 8px 8px 2px 2px;
-  opacity: 0.7;
+  border-radius: 2px 2px 2px 2px;
+  opacity: 0.4;
 }
 
 #inverse {
@@ -113,7 +113,7 @@ article.getIt {
   line-height: 150%;
   max-width: 475px;
   border: 2px solid #132639;
-  border-radius: 14px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
   padding: 0 1em;
   margin: 0.75em;
   float:left;
@@ -128,7 +128,7 @@ article.getIt2 {
   line-height: 150%;
   max-width: 475px;
   border: 2px solid #132639;
-  border-radius: 2px 14px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
   padding: 0 1em 1em 1em;
   margin: 0.75em;
   opacity: 0.8;
@@ -142,7 +142,7 @@ article.widerGetIt {
   line-height: 150%;
   max-width: 475px;
   border: 2px solid #132639;
-  border-radius: 14px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
   padding: 0 20px 20px 20px;
   margin: 15px;
   float:left;
@@ -156,7 +156,7 @@ article.widerGetIt2 {
   line-height: 150%;
   width: 475px;
   border: 2px solid #132639;
-  border-radius: 2px 14px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
   padding: 0 20px 20px 20px;
   margin: 15px;
   float:left;
@@ -190,7 +190,7 @@ section.codeBlock {
   font-weight: 900;
   line-height: 70%;
   padding: 4px;
-  border-radius: 8px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
 }
 
 section.codeBlock2 {
@@ -202,7 +202,7 @@ section.codeBlock2 {
   font-weight: 900;
   line-height: 70%;
   padding: 4px;
-  border-radius: 2px 8px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
 }
 
 div.blocked {
@@ -223,22 +223,22 @@ div.bordered {
 span.indexCard {
   background-color: #3973AC;
   padding: 8px 8px 4px 12px;
-  border: 1px solid  #132639;
-  border-radius: 8px 2px 2px 2px;
+
+  border-radius: 2px 2px 2px 2px;
 }
 
 span.indexCard2 {
   background-color: #3973AC;
   padding: 8px 8px 4px 8px;
-  border: 1px solid  #132639;
-  border-radius: 2px 8px 2px 2px;
+
+  border-radius: 2px 2px 2px 2px;
 }
 
 div.indexCardBig {
   background-color: #3973AC;
   padding: 0.4em;
-  border: 1px solid  #132639;
-  border-radius: 8px 2px 2px 2px;
+
+  border-radius: 2px 2px 2px 2px;
   margin: 0.75em 0 0.75em 0;
   max-width: 22em;
   text-align: center;
@@ -247,8 +247,8 @@ div.indexCardBig {
 div.indexCardBig2 {
   background-color: #3973AC;
   padding: 0.4em;
-  border: 1px solid  #132639;
-  border-radius: 2px 8px 2px 2px;
+
+  border-radius: 2px 2px 2px 2px;
   margin: 0.75em 0 0.75em 0;
   max-width: 22em;
   text-align: center;
